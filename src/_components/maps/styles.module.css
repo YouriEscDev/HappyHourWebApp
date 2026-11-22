@@ -1,0 +1,17 @@
+.dealMarker {
+    border-radius: 10px;
+    background: #FBE99F;
+    border: 1px solid var(--color-primary);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 400;
+    color: var(--color-text);
+
+    cursor: pointer;
+
+    font-size: 20px;
+    padding: 5px 10px;
+}

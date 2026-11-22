@@ -1,0 +1,27 @@
+.appShell.phone {
+    background: var(--color-background);
+    width: 100dvw;
+    height: 100dvh;
+}
+
+.appShell.desktop {
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f1e8;
+}
+
+.appShell.desktop .app {
+    width: 430px;
+    height: calc(100dvh - 300px);
+
+    background: var(--color-background);
+
+    border: 1px solid #181818;
+    border-radius: 36px;
+
+    box-shadow:
+            0 20px 60px rgb(0 0 0 / 15%);
+}

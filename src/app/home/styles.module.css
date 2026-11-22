@@ -1,0 +1,15 @@
+.titles{
+    margin-bottom: 15px;
+}
+.bestDeals{
+    margin: 20px;
+}
+.bestDeals h2{
+    margin-bottom: 15px;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100dvw;
+}

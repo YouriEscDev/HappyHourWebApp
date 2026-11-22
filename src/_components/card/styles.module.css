@@ -1,0 +1,15 @@
+.card{
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.data{
+    padding: 15px;
+}
+.location{
+    display: flex;
+    align-items: center;
+}
+.button{
+    margin-top: 15px;
+}

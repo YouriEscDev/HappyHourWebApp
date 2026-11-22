@@ -1,0 +1,22 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+    background-color: white;
+}
+.footer button{
+    background-color: inherit;
+    border: none;
+    padding: 15px 10px 15px 10px;
+}
+.footer button div{
+    margin-top: 5px;
+}
+.footer .selected{
+    border-top: 3px solid var(--color-primary);
+    color: var(--color-primary);
+}
+.selected p{
+    color: var(--color-primary);
+}
+

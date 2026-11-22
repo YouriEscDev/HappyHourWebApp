@@ -1,0 +1,23 @@
+.slider {
+    display: flex;
+    gap: 15px;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    padding: 5px 0 15px;
+
+    /* Cache la scrollbar */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slide {
+    flex: 0 0 350px;
+    scroll-snap-align: start;
+}

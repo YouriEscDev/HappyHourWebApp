@@ -1,0 +1,55 @@
+.shimmer {
+    --sk-base: #e6e8ec;
+    --sk-highlight: #f5f6f8;
+
+    position: relative;
+    overflow: hidden;
+    background: var(--sk-base);
+    border-radius: 8px;
+}
+
+/* the moving light band */
+.shimmer::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    transform: translateX(-100%);
+    background: linear-gradient(
+            90deg,
+            transparent 0%,
+            var(--sk-highlight) 50%,
+            transparent 100%
+    );
+    animation: shimmer 1.4s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* shapes */
+.image   { width: 100%; max-width: 350px; height: 150px; border-radius: 12px 12px 0 0; }
+.line    { height: 14px; margin: 10px 0; }
+.small   { width: 40%; height: 12px; }
+.title   { width: 85%; height: 30px; margin: 14px 0; }
+.address { width: 60%; height: 16px; }
+.dot     { width: 20px; height: 20px; border-radius: 50%; }
+.city    { width: 35%; margin: 0 0 0 8px; }
+.btn     { width: 100%; height: 48px; border-radius: 10px; }
+
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+    .shimmer {
+        --sk-base: #2a2d34;
+        --sk-highlight: #3a3e47;
+    }
+}
+
+/* respect users who turn off animations */
+@media (prefers-reduced-motion: reduce) {
+    .shimmer::after {
+        animation: none;
+    }
+}
